@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+        android:orientation="horizontal"
+        style="@style/login_group_style"
+        android:background="@drawable/input_long"
+        android:layout_marginTop="20dp">
+        <com.ly.yida.view.ClearEditText 
+            android:id="@+id/cet_phone"
+            android:layout_height="60dp"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dp"
+            android:hint="@string/contact_num"
+            android:background="#00ffffff"
+            android:inputType="phone"
+            android:layout_weight="6"
+            />
+        <Button 
+            android:id="@+id/btnContact"
+            android:layout_height="60dp"
+            android:layout_width="wrap_content"
+            android:text="@string/contact_str"
+            android:layout_weight="1"/>
+    </LinearLayout>
+	<Spinner 
+	    android:id="@+id/spr_lock"
+	    android:layout_marginTop="10dp"
+	    android:background="@drawable/input_long"
+	    style="@style/login_style"/>
+	<Button 
+	    android:id="@+id/btn_grant"
+	    style="@style/login_style"
+	    android:paddingTop="10dp"
+	    android:text="@string/grant_str"/>
+</LinearLayout>

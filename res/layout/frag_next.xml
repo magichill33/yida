@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:pv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<include android:id="@+id/titleBar" layout="@layout/top_bar"/>
+    <com.ly.yida.view.PasswordView
+        android:id="@+id/pv_password1"
+        style="@style/login_group_style"
+        android:layout_marginTop="20dp"
+        pv:ivHint="请填写密码"
+        pv:imageSrc="@drawable/show_eye"
+        android:background="@drawable/input_long"/>
+	<TextView 
+	    style="@style/tip_style"
+	    android:layout_marginTop="10dp"
+	    android:text="至少6位英文字母和数字组合"/>
+    <com.ly.yida.view.PasswordView
+        android:id="@+id/pv_password2"
+        style="@style/login_group_style"
+        android:layout_marginTop="10dp"
+        pv:ivHint="再次填写确认"
+        pv:imageSrc="@drawable/show_eye"
+        android:background="@drawable/input_long" />
+	<Button 
+	    android:id="@+id/btnSubmit"
+	    style="@style/login_style"
+	    android:text="完成注册"
+	    android:layout_marginTop="10dp"/>
+</LinearLayout>

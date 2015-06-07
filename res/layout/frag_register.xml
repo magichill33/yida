@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	<include android:id="@+id/titleBar" layout="@layout/top_bar"/>
+    <com.ly.yida.view.ClearEditText
+        android:id="@+id/cet_phone"
+        style="@style/login_style"
+        android:background="@drawable/input_long"
+        android:hint="@string/cet_phone_str"
+        android:layout_marginTop="20dp"
+        android:inputType="phone"
+        android:singleLine="true" />
+
+    <RelativeLayout
+        style="@style/login_group_style"
+        android:background="@drawable/input_long"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+        <com.ly.yida.view.ClearEditText
+            android:id="@+id/et_verifycode"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:background="#00ffffff"
+            android:paddingLeft="10dp"
+           	android:layout_alignParentLeft="true"
+           	android:layout_toLeftOf="@+id/btn_verify"
+            android:hint="@string/verify_str"
+            android:singleLine="true" />
+		<Button
+            android:id="@+id/btn_verify"
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:text="@string/btn_verify_str" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        style="@style/login_style"
+        android:layout_marginTop="10dp"
+        android:text="@string/btn_next_str" />
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" />
+    <LinearLayout
+        android:id="@+id/ll_protocol"
+        style="@style/login_style"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_desc" />
+
+        <TextView
+            android:id="@+id/tv_deal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login_deal"
+            android:textColor="@color/link_color" />
+    </LinearLayout>
+</LinearLayout>

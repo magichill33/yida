@@ -4,8 +4,11 @@ import com.lidroid.xutils.view.annotation.ViewInject;
 import com.ly.yida.R;
 import com.ly.yida.utils.AppManager;
 import com.ly.yida.utils.Constants;
+import com.ly.yida.utils.CustomProgressDialog;
+import com.ly.yida.utils.SharePrefUtil;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -56,7 +59,16 @@ public class CenterFragment extends BaseFragment {
 
 			break;
 		case R.id.tv_exit:
-			AppManager.getAppManager().AppExit(activity);
+			SharePrefUtil.clear(activity.getApplicationContext());
+			final CustomProgressDialog pd = new CustomProgressDialog(activity, "ÕýÔÚÍË³ö¡­¡­¡­");
+			pd.show();
+			new Handler().postDelayed(new Runnable() {
+				@Override
+				public void run() {
+					pd.dismiss();
+					AppManager.getAppManager().AppExit(activity);
+				}
+			}, 2000);
 			break;
 		default:
 			break;

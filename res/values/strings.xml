@@ -23,4 +23,5 @@
     <string name="operation_str">操作台</string>
     <string name="invite_str">邀请亲友</string>
     <string name="center_str">个人中心</string>
+    <string name="position_str">我的车位</string>
 </resources>

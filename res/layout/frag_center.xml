@@ -3,6 +3,168 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" >
-    
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_invite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rl_selector"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/iv_invite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/invite_press2" />
+
+            <TextView
+                android:id="@+id/tv_invite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_invite"
+                android:layout_centerHorizontal="true"
+                android:text="@string/invite_str" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_invite"
+                android:layout_centerHorizontal="true"
+                android:text="+" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_positon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rl_selector"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/iv_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/myposition_press2" />
+
+            <TextView
+                android:id="@+id/tv_positon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_position"
+                android:layout_centerHorizontal="true"
+                android:text="@string/position_str" />
+
+            <TextView
+                android:id="@+id/tv_positonnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_positon"
+                android:layout_centerHorizontal="true"
+                android:text="9" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_grant"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rl_selector"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/iv_grant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/mygrant_press2" />
+
+            <TextView
+                android:id="@+id/tv_grant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_grant"
+                android:layout_centerHorizontal="true"
+                android:text="@string/position_str" />
+
+            <TextView
+                android:id="@+id/tv_grantnum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_grant"
+                android:layout_centerHorizontal="true"
+                android:text="3" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"
+        android:background="#000000" />
+	<TextView 
+	    android:id="@+id/tv_scan"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:paddingLeft="10dp"
+	    android:gravity="center_vertical"
+	    android:textSize="14sp"
+	    android:background="@drawable/rl_selector"
+	    android:clickable="true"
+	    android:text="扫一扫 添加设备"/>
+	<View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"
+        android:background="#000000" />
+	<TextView 
+	    android:id="@+id/tv_version"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:paddingLeft="10dp"
+	    android:gravity="center_vertical"
+	    android:textSize="14sp"
+	    android:background="#ffffff"
+	    android:text="当前版本:1.0"/>
+	 <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"
+        android:background="#000000" />
+
+	 <TextView 
+	    android:id="@+id/tv_weixin"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:paddingLeft="10dp"
+	    android:gravity="center_vertical"
+	    android:textSize="14sp"
+	    android:background="#ffffff"
+	    android:text="反馈:官方微信"/>
+	 <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"
+        android:background="#000000" />
+	 <TextView 
+	    android:id="@+id/tv_exit"
+	    android:layout_width="match_parent"
+	    android:layout_height="50dp"
+	    android:paddingLeft="10dp"
+	    android:gravity="center_vertical"
+	    android:textSize="14sp"
+	    android:background="@drawable/rl_selector"
+	    android:clickable="true"
+	    android:text="退出"/>
+	 <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"
+        android:background="#000000" />
 </LinearLayout>

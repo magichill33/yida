@@ -13,7 +13,7 @@ import android.text.TextUtils;
 
 
 /**
- * SharePreferences操作工具�?
+ * SharePreferences操作工具类
  */
 public class SharePrefUtil {
 	private static String tag = SharePrefUtil.class.getSimpleName();
@@ -22,18 +22,18 @@ public class SharePrefUtil {
 
 	public interface KEY {
 		
-		String FUNCTION_ALL_JSON = "all_function_json";//�?有的Funcation Json
+		String FUNCTION_ALL_JSON = "all_function_json";//所有的Funcation Json
 		String FUNCTION_SELECTED_ID = "selcted_function_ids";//选中的function ids
 		
-		String CATE_ALL_JSON = "all_cate_json";//�?有的新闻目录 Json
+		String CATE_ALL_JSON = "all_cate_json";//所有的新闻目录 Json
 		String CATE_SELECTED_JSON = "selcted_cate_json";//选中的新闻目录ids
-		String CATE_EXTEND_ID = "extend_cate_ids";//推荐的新�? 目录ids
+		String CATE_EXTEND_ID = "extend_cate_ids";//推荐的新闻 目录ids
 		
 		String VOTE_SELECTED_ID = "selcted_vote_ids";//选中的function ids
 	}
 
 	/**
-	 * 保存布尔�?
+	 * 保存布尔值
 	 * 
 	 * @param context
 	 * @param key
@@ -46,7 +46,7 @@ public class SharePrefUtil {
 	}
 
 	/**
-	 * 保存字符�?
+	 * 保存字符串
 	 * 
 	 * @param context
 	 * @param key
@@ -66,7 +66,7 @@ public class SharePrefUtil {
 	}
 
 	/**
-	 * 保存long�?
+	 * 保存long型
 	 * 
 	 * @param context
 	 * @param key
@@ -79,7 +79,7 @@ public class SharePrefUtil {
 	}
 
 	/**
-	 * 保存int�?
+	 * 保存int型
 	 * 
 	 * @param context
 	 * @param key
@@ -92,7 +92,7 @@ public class SharePrefUtil {
 	}
 
 	/**
-	 * 保存float�?
+	 * 保存float型
 	 * 
 	 * @param context
 	 * @param key
@@ -105,7 +105,7 @@ public class SharePrefUtil {
 	}
 
 	/**
-	 * 获取字符�?
+	 * 获取字符值
 	 * 
 	 * @param context
 	 * @param key
@@ -119,7 +119,7 @@ public class SharePrefUtil {
 	}
 
 	/**
-	 * 获取int�?
+	 * 获取int值
 	 * 
 	 * @param context
 	 * @param key
@@ -133,7 +133,7 @@ public class SharePrefUtil {
 	}
 
 	/**
-	 * 获取long�?
+	 * 获取long值
 	 * 
 	 * @param context
 	 * @param key
@@ -147,7 +147,7 @@ public class SharePrefUtil {
 	}
 
 	/**
-	 * 获取float�?
+	 * 获取float值
 	 * 
 	 * @param context
 	 * @param key
@@ -161,7 +161,7 @@ public class SharePrefUtil {
 	}
 
 	/**
-	 * 获取布尔�?
+	 * 获取布尔值
 	 * 
 	 * @param context
 	 * @param key
@@ -176,7 +176,7 @@ public class SharePrefUtil {
 	}
 	
 	/**
-	 * 将对象进行base64编码后保存到SharePref�?
+	 * 将对象进行base64编码后保存到SharePref中
 	 * 
 	 * @param context
 	 * @param key
@@ -191,7 +191,7 @@ public class SharePrefUtil {
 		try {
 			oos = new ObjectOutputStream(baos);
 			oos.writeObject(object);
-			// 将对象的转为base64�?
+			// 将对象的转为base64码
 			String objBase64 = new String(Base64.encodeBase64(baos
 					.toByteArray()));
 
@@ -204,7 +204,7 @@ public class SharePrefUtil {
 	}
 
 	/**
-	 * 将SharePref中经过base64编码的对象读取出�?
+	 * 将SharePref中经过base64编码的对象读取出来
 	 * 
 	 * @param context
 	 * @param key
